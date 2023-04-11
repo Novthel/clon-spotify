@@ -6,11 +6,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <Layout>
-      <main className="bg-spotify-background min-h-screen">
+      <div className="bg-spotify-background min-h-screen text-gray-300 ">
         <h1>
-          Hello world!
         </h1>
-      </main>
+      </div>
     
     </Layout>
   )

@@ -1,7 +1,14 @@
 import Head from "next/head"
+import Header from "./Header"
+import Sidebar from "./Sidebar"
+import { useState } from "react"
 
 
 export default function Layout({ children }) {
+
+  const [showMenu, setShowMenu] = useState(false);
+
+
   return (
     <>
      <Head>
@@ -10,7 +17,8 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+      <Header setShowMenu={ setShowMenu } />
+      <Sidebar setShowMenu={ setShowMenu } showMenu={ showMenu } />
       <main>
         { children }
       </main>
