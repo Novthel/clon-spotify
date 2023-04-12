@@ -5,7 +5,7 @@ import { AiOutlineMore, AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 export default function Header({ setShowMenu }) {
   return (
     <div className="fixed w-full left-0 top-0 md:ml-64 md:w-[calc(100%-256px)] bg-spotify-barra text-gray-300 
-    flex justify-between py-3 px-6 ">
+    flex justify-between py-3 px-6 z-40 ">
       <button onClick={ ()=> setShowMenu(true)} className="md:hidden">
         <AiOutlineMore className="text-2xl p-2 box-content hover:cursor-pointer" />
       </button>

@@ -2,6 +2,7 @@ import Head from "next/head"
 import Header from "./Header"
 import Sidebar from "./Sidebar"
 import { useState } from "react"
+import Footer from "./Footer";
 
 
 export default function Layout({ children }) {
@@ -22,7 +23,7 @@ export default function Layout({ children }) {
       <main>
         { children }
       </main>
-
+      <Footer />
     </>
   )
 }

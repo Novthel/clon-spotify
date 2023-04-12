@@ -14,6 +14,8 @@ module.exports = {
         spotify: {
           barra: "#101010",
           background: "#1e1e1e",
+          backgroundCard: "#181818",
+          backgroundCardHover:"#282828",
           sidebar: "#000000"
         },
       },

@@ -5,7 +5,7 @@ import { BsFillHouseDoorFill, BsSearch, BsCollectionFill, BsPlusSquareFill, BsSu
 export default function Sidebar({ showMenu, setShowMenu }) {
   return (
     <div className={ `fixed bg-spotify-sidebar w-64 text-gray-300 h-full p-6 flex flex-col 
-    justify-between ${ showMenu? 'left-0' : '-left-full' } md:left-0 transition-all duration-300` }>
+    justify-between ${ showMenu? 'left-0' : '-left-full' } md:left-0 transition-all duration-300 z-50` }>
       <div>
         <button className="absolute top-4 right-4 text-gray-300 hover:text-white md:hidden" onClick={()=>setShowMenu(false)}>
           <BsXLg className="text-2xl font-bold" />
@@ -45,7 +45,7 @@ export default function Sidebar({ showMenu, setShowMenu }) {
         </nav>
       </div>
       <div>
-        <ul className="flex flex-col gap-y-4">
+        <ul className="flex flex-col gap-y-4 md:mb-20 ">
             <li className="mb-4">
               <Link href='/' className="flex gap-4 items-center  text-gray-300 hover:text-white transition-colors text-xs">
                 Cookies
